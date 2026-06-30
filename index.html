@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ===== META TAGS ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shaik Sohel | AI & Machine Learning Student | Portfolio</title>
+    <meta name="description" content="Portfolio of Shaik Sohel — AI & Machine Learning Student, Python Developer, and Future AI Engineer. Explore projects, skills, and services.">
+    <meta name="keywords" content="Shaik Sohel, AI, Machine Learning, Python Developer, Portfolio, Web Developer, Software Engineer">
+    <meta name="author" content="Shaik Sohel">
+    <meta name="robots" content="index, follow">
+
+    <!-- ===== OPEN GRAPH ===== -->
+    <meta property="og:title" content="Shaik Sohel | Portfolio">
+    <meta property="og:description" content="AI & Machine Learning Student | Python Developer | Future AI Engineer">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/profile.png">
+
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" type="image/png" href="images/profile.png">
+
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ===== BOOTSTRAP 5 CSS ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ===== FONT AWESOME 6 ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- ===== AOS ANIMATION CSS ===== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ===== CUSTOM CSS ===== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- ===== PRELOADER ===== -->
+    <div id="preloader" aria-label="Loading">
+        <div class="loader-ring"></div>
+        <p class="preloader-text gradient-text">SHAIK SOHEL</p>
+    </div>
+
+
+    <!-- ===== MOUSE GLOW ===== -->
+    <!-- Created dynamically via JS -->
+
+    <!-- ===== SCROLL PROGRESS BAR ===== -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ===== DECORATIVE BLOBS ===== -->
+    <div class="blob blob-1" aria-hidden="true"></div>
+    <div class="blob blob-2" aria-hidden="true"></div>
+    <div class="blob blob-3" aria-hidden="true"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#hero">
+                <span class="gradient-text">&lt;Sohel /&gt;</span>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <!-- Theme Toggle -->
+                    <li class="nav-item ms-lg-3">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle Theme">
+                            <i class="fas fa-moon" id="themeIcon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================= -->
+    <!-- ===== HERO SECTION ===== -->
+    <!-- ============================= -->
+    <section id="hero">
+        <!-- Particles Background -->
+        <div id="particles-js" aria-hidden="true"></div>
+
+        <div class="hero-content">
+            <div class="container text-center">
+                <!-- Profile Image -->
+                <div class="profile-img-wrapper" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="images/profile.png" alt="Shaik Sohel — AI & ML Student" class="profile-img" loading="eager">
+                </div>
+
+                <!-- Name / Tagline -->
+                <h1 class="hero-tagline">
+                    Hi, I'm <span class="gradient-text">Shaik Sohel</span>
+                </h1>
+
+                <!-- Typed.js -->
+                <div class="typed-wrapper">
+                    <span class="typed-prefix">I'm a </span><span id="typed-output"></span>
+                </div>
+
+                <!-- Description -->
+                <p class="hero-description">
+                    Motivated B.Tech student specializing in AI &amp; Machine Learning with strong skills in 
+                    Python, SQL, Web Development, and AI application development.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-buttons">
+                    <a href="resume/resume.pdf" download class="btn btn-primary-custom" id="downloadResume">
+                        <i class="fas fa-download me-2"></i>Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-outline-custom" id="hireMeBtn">
+                        <i class="fas fa-paper-plane me-2"></i>Hire Me
+                    </a>
+                    <a href="#projects" class="btn btn-outline-custom" id="viewProjectsBtn">
+                        <i class="fas fa-code me-2"></i>View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline-custom" id="contactMeBtn">
+                        <i class="fas fa-envelope me-2"></i>Contact Me
+                    </a>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="social-links">
+                    <a href="https://github.com/thisissohel07" target="_blank" rel="noopener noreferrer"
+                       class="social-icon" aria-label="GitHub" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/shaik-sohel-07" target="_blank" rel="noopener noreferrer"
+                       class="social-icon" aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:thisissohel07@gmail.com"
+                       class="social-icon" aria-label="Email" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+917981082694"
+                       class="social-icon" aria-label="Phone" title="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ============================= -->
+    <!-- ===== ABOUT SECTION ===== -->
+    <!-- ============================= -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <!-- Section Header -->
+            <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
+            <p class="section-subtitle">Get to know who I am, what drives me, and why I'm passionate about technology.</p>
+            <div class="section-divider"></div>
+
+            <div class="row align-items-center g-5">
+                <!-- Left — Image -->
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="about-img-wrapper mx-auto">
+                        <img src="images/profile.png" alt="Shaik Sohel portrait" class="about-img" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Right — Content -->
+                <div class="col-lg-7" data-aos="fade-left">
+                    <!-- Who I Am -->
+                    <h3 class="about-heading"><i class="fas fa-user-astronaut me-2 gradient-text"></i>Who I Am</h3>
+                    <p class="about-text">
+                        I'm <strong>Shaik Sohel</strong>, a passionate B.Tech student at Guru Nanak Institutions Technical Campus, 
+                        specializing in <strong>Artificial Intelligence &amp; Machine Learning</strong>. I thrive at the intersection 
+                        of software engineering and intelligent systems — building solutions that learn, adapt, and make a difference.
+                    </p>
+
+                    <!-- Career Objective -->
+                    <h3 class="about-heading"><i class="fas fa-bullseye me-2 gradient-text"></i>Career Objective</h3>
+                    <p class="about-text">
+                        To secure a challenging role in AI/ML Engineering or Software Development where I can apply my 
+                        technical skills, contribute to innovative projects, and grow alongside a forward-thinking team.
+                    </p>
+
+                    <!-- My Passion -->
+                    <h3 class="about-heading"><i class="fas fa-heart me-2 gradient-text"></i>My Passion</h3>
+                    <p class="about-text">
+                        I'm passionate about building intelligent solutions that solve real-world problems — from 
+                        face-recognition systems to data-driven web applications. Every line of code is an opportunity 
+                        to create something meaningful.
+                    </p>
+
+                    <!-- Why Hire Me -->
+                    <h3 class="about-heading"><i class="fas fa-handshake me-2 gradient-text"></i>Why Hire Me</h3>
+                    <p class="about-text">
+                        I bring a unique blend of AI knowledge, hands-on Python development experience, and a deep 
+                        hunger to learn. I don't just write code — I engineer solutions with clarity, efficiency, and purpose.
+                    </p>
+
+                    <!-- Strengths -->
+                    <h3 class="about-heading"><i class="fas fa-bolt me-2 gradient-text"></i>Strengths</h3>
+                    <div class="strengths-grid">
+                        <div class="strength-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="strength-icon"><i class="fas fa-book-reader"></i></div>
+                            <span class="strength-text">Quick Learner</span>
+                        </div>
+                        <div class="strength-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="strength-icon"><i class="fas fa-puzzle-piece"></i></div>
+                            <span class="strength-text">Problem Solver</span>
+                        </div>
+                        <div class="strength-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="strength-icon"><i class="fas fa-users"></i></div>
+                            <span class="strength-text">Team Player</span>
+                        </div>
+                        <div class="strength-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="strength-icon"><i class="fas fa-lightbulb"></i></div>
+                            <span class="strength-text">Creative Thinker</span>
+                        </div>
+                        <div class="strength-item" data-aos="fade-up" data-aos-delay="500">
+                            <div class="strength-icon"><i class="fas fa-fire"></i></div>
+                            <span class="strength-text">Hardworking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ===== EDUCATION SECTION ===== -->
+    <!-- ============================= -->
+    <section id="education" class="section-padding">
+        <div class="container">
+            <!-- Section Header -->
+            <h2 class="section-title"><span class="gradient-text">Education</span></h2>
+            <p class="section-subtitle">My academic journey and milestones.</p>
+            <div class="section-divider"></div>
+
+            <!-- Timeline -->
+            <div class="timeline">
+                <!-- B.Tech -->
+                <div class="timeline-item">
+                    <div class="timeline-content glass-card" data-tilt>
+                        <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt me-2"></i>Expected 2028</span>
+                        <h4 class="timeline-school">Guru Nanak Institutions Technical Campus, Hyderabad</h4>
+                        <h5 class="timeline-degree">B.Tech in Artificial Intelligence &amp; Machine Learning</h5>
+                        <p class="timeline-details">
+                            Pursuing a comprehensive degree in AI &amp; ML, covering deep learning, 
+                            computer vision, natural language processing, data structures, and algorithms.
+                        </p>
+                        <div class="timeline-badge"><i class="fas fa-star me-1"></i>Expected Graduation 2028</div>
+                    </div>
+                </div>
+
+                <!-- Intermediate -->
+                <div class="timeline-item">
+                    <div class="timeline-content glass-card" data-tilt>
+                        <div class="timeline-icon"><i class="fas fa-school"></i></div>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt me-2"></i>2022 – 2024</span>
+                        <h4 class="timeline-school">Sri Nalanda Junior College</h4>
+                        <h5 class="timeline-degree">Intermediate (10+2)</h5>
+                        <p class="timeline-details">
+                            Completed intermediate education with strong academic focus on 
+                            Mathematics, Physics, and Chemistry.
+                        </p>
+                        <div class="timeline-badge"><i class="fas fa-award me-1"></i>951 Marks</div>
+                    </div>
+                </div>
+
+                <!-- SSC -->
+                <div class="timeline-item">
+                    <div class="timeline-content glass-card" data-tilt>
+                        <div class="timeline-icon"><i class="fas fa-book"></i></div>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt me-2"></i>Completed 2022</span>
+                        <h4 class="timeline-school">Telangana State Model School</h4>
+                        <h5 class="timeline-degree">SSC (10th)</h5>
+                        <p class="timeline-details">
+                            Completed secondary school education with excellent grades, building 
+                            a solid foundation in mathematics and logical problem-solving.
+                        </p>
+                        <div class="timeline-badge"><i class="fas fa-trophy me-1"></i>CGPA: 9.5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ===== SKILLS SECTION ===== -->
+    <!-- ============================= -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <!-- Section Header -->
+            <h2 class="section-title"><span class="gradient-text">Skills</span></h2>
+            <p class="section-subtitle">Technologies and tools I use to bring ideas to life.</p>
+            <div class="section-divider"></div>
+
+            <!-- Programming Languages -->
+            <div class="skill-category" data-aos="fade-up">
+                <h3 class="skill-category-title"><i class="fas fa-code me-2"></i>Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <p class="skill-name">Python</p>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon"><i class="fab fa-java"></i></div>
+                        <p class="skill-name">Java</p>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon"><i class="fas fa-copyright"></i></div>
+                        <p class="skill-name">C</p>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <p class="skill-name">SQL</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Technologies -->
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="skill-category-title"><i class="fas fa-globe me-2"></i>Web Technologies</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <p class="skill-name">HTML5</p>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <p class="skill-name">CSS3</p>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                        <p class="skill-name">JavaScript</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Database -->
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="skill-category-title"><i class="fas fa-server me-2"></i>Database</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <p class="skill-name">MySQL</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Concepts -->
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="skill-category-title"><i class="fas fa-brain me-2"></i>Core Concepts</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                        <p class="skill-name">Data Structures</p>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                        <p class="skill-name">DBMS</p>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+                        <p class="skill-name">OOP</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="skill-category-title"><i class="fas fa-tools me-2"></i>Tools &amp; Platforms</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <p class="skill-name">Git</p>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon"><i class="fab fa-github"></i></div>
+                        <p class="skill-name">GitHub</p>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                        <p class="skill-name">VS Code</p>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+                        <p class="skill-name">MS Excel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ===== AI & DATA SKILLS ===== -->
+    <!-- ============================= -->
+    <section id="ai-skills" class="section-padding">
+        <div class="container">
+            <!-- Section Header -->
+            <h2 class="section-title"><span class="gradient-text">AI &amp; Data Skills</span></h2>
+            <p class="section-subtitle">Specialized skills in data handling and analytics.</p>
+            <div class="section-divider"></div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="ai-skill-card glass-card">
+                        <div class="ai-icon"><i class="fas fa-keyboard"></i></div>
+                        <div>
+                            <h5>Data Entry</h5>
+                            <p>Accurate, efficient data entry with attention to detail.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="ai-skill-card glass-card">
+                        <div class="ai-icon"><i class="fas fa-check-double"></i></div>
+                        <div>
+                            <h5>Data Validation</h5>
+                            <p>Ensuring data integrity and consistency across systems.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="ai-skill-card glass-card">
+                        <div class="ai-icon"><i class="fas fa-broom"></i></div>
+                        <div>
+                            <h5>Data Cleaning</h5>
+                            <p>Transforming raw data into clean, usable datasets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+                    <div class="ai-skill-card glass-card">
+                        <div class="ai-icon"><i class="fas fa-table"></i></div>
+                        <div>
+                            <h5>Spreadsheet Management</h5>
+                            <p>Advanced spreadsheet skills for data organization and reporting.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="ai-skill-card glass-card">
+                        <div class="ai-icon"><i class="fas fa-chart-bar"></i></div>
+                        <div>
+                            <h5>Basic Data Analytics</h5>
+                            <p>Extracting insights and trends from structured data.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="350">
+                    <div class="ai-skill-card glass-card">
+                        <div class="ai-icon"><i class="fas fa-file-excel"></i></div>
+                        <div>
+                            <h5>Excel</h5>
+                            <p>Formulas, pivot tables, charts, and data analysis with Excel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="ai-skill-card glass-card">
+                        <div class="ai-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <div>
+                            <h5>Typing</h5>
+                            <p>Fast and accurate typing for efficient data processing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="450">
+                    <div class="ai-skill-card glass-card">
+                        <div class="ai-icon"><i class="fas fa-clipboard-list"></i></div>
+                        <div>
+                            <h5>Record Management</h5>
+                            <p>Organizing, maintaining, and retrieving records systematically.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ===== PROJECTS SECTION ===== -->
+    <!-- ============================= -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <!-- Section Header -->
+            <h2 class="section-title"><span class="gradient-text">Projects</span></h2>
+            <p class="section-subtitle">Real-world applications I've built from the ground up.</p>
+            <div class="section-divider"></div>
+
+            <div class="row g-4">
+                <!-- Project 1 — Face Recognition Attendance System -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="project-card glass-card" data-tilt>
+                        <div class="project-img-wrapper">
+                            <div class="project-img project-img-placeholder" style="background: linear-gradient(135deg, #6c63ff 0%, #00d4ff 100%); display:flex; align-items:center; justify-content:center;">
+                                <i class="fas fa-face-smile" style="font-size:5rem; color:rgba(255,255,255,0.3);"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="project-category">AI / Computer Vision</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Face Recognition Attendance System</h4>
+                            <p class="project-description">
+                                An intelligent attendance management system that uses real-time face recognition 
+                                to automate attendance tracking, prevent proxy attendance, and store records securely.
+                            </p>
+                            <!-- Tech Tags -->
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                            <!-- Features -->
+                            <ul class="project-features">
+                                <li>Real-time face recognition</li>
+                                <li>Attendance automation</li>
+                                <li>Secure database storage</li>
+                                <li>Proxy prevention mechanism</li>
+                            </ul>
+                            <!-- Links -->
+                            <div class="project-links">
+                                <a href="https://github.com/thisissohel07" target="_blank" class="project-link btn-primary-custom" rel="noopener">
+                                    <i class="fab fa-github me-2"></i>GitHub
+                                </a>
+                                <a href="#" class="project-link btn-outline-custom">
+                                    <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 — Online Voting System -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card glass-card" data-tilt>
+                        <div class="project-img-wrapper">
+                            <div class="project-img project-img-placeholder" style="background: linear-gradient(135deg, #ff6b9d 0%, #ffd93d 100%); display:flex; align-items:center; justify-content:center;">
+                                <i class="fas fa-vote-yea" style="font-size:5rem; color:rgba(255,255,255,0.3);"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="project-category">Web Application</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Online Voting System</h4>
+                            <p class="project-description">
+                                A secure and reliable online voting platform with user authentication, 
+                                encrypted vote storage, and mechanisms to prevent duplicate voting.
+                            </p>
+                            <!-- Tech Tags -->
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">SQL</span>
+                            </div>
+                            <!-- Features -->
+                            <ul class="project-features">
+                                <li>Secure authentication system</li>
+                                <li>User registration &amp; login</li>
+                                <li>Vote encryption</li>
+                                <li>Duplicate vote prevention</li>
+                            </ul>
+                            <!-- Links -->
+                            <div class="project-links">
+                                <a href="https://github.com/thisissohel07" target="_blank" class="project-link btn-primary-custom" rel="noopener">
+                                    <i class="fab fa-github me-2"></i>GitHub
+                                </a>
+                                <a href="#" class="project-link btn-outline-custom">
+                                    <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ===== SERVICES SECTION ===== -->
+    <!-- ============================= -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <!-- Section Header -->
+            <h2 class="section-title"><span class="gradient-text">Services</span></h2>
+            <p class="section-subtitle">What I can do for you — skills ready to create impact.</p>
+            <div class="section-divider"></div>
+
+            <div class="row g-4">
+                <!-- Python Development -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card glass-card" data-tilt>
+                        <div class="service-icon"><i class="fab fa-python"></i></div>
+                        <h4 class="service-title">Python Development</h4>
+                        <p class="service-description">
+                            Building robust Python applications — from scripts and automation 
+                            to full-stack web applications and APIs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- AI & ML -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card glass-card" data-tilt>
+                        <div class="service-icon"><i class="fas fa-robot"></i></div>
+                        <h4 class="service-title">AI &amp; Machine Learning</h4>
+                        <p class="service-description">
+                            Developing intelligent models for prediction, classification, 
+                            computer vision, and natural language processing.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card glass-card" data-tilt>
+                        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h4 class="service-title">Web Development</h4>
+                        <p class="service-description">
+                            Creating modern, responsive websites and web applications 
+                            with clean UI and seamless user experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Database Development -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card glass-card" data-tilt>
+                        <div class="service-icon"><i class="fas fa-database"></i></div>
+                        <h4 class="service-title">Database Development</h4>
+                        <p class="service-description">
+                            Designing and managing MySQL databases with optimized 
+                            queries, schemas, and data integrity.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Automation -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card glass-card" data-tilt>
+                        <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                        <h4 class="service-title">Automation</h4>
+                        <p class="service-description">
+                            Automating repetitive tasks with Python scripts — from 
+                            file processing to web scraping and workflows.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Data Entry -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card glass-card" data-tilt>
+                        <div class="service-icon"><i class="fas fa-keyboard"></i></div>
+                        <h4 class="service-title">Data Entry &amp; Analytics</h4>
+                        <p class="service-description">
+                            Professional data entry, cleaning, validation, and basic 
+                            analytics using Excel and Python.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ===== STATS SECTION ===== -->
+    <!-- ============================= -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <!-- Projects -->
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-box">
+                        <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h3 class="stat-number gradient-text" data-count="2">0+</h3>
+                        <p class="stat-label">Projects</p>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-box">
+                        <div class="stat-icon"><i class="fas fa-code"></i></div>
+                        <h3 class="stat-number gradient-text" data-count="5">0+</h3>
+                        <p class="stat-label">Languages</p>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-box">
+                        <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3 class="stat-number gradient-text" data-count="20">0+</h3>
+                        <p class="stat-label">Skills</p>
+                    </div>
+                </div>
+
+                <!-- Learning Hours -->
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="stat-box">
+                        <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                        <h3 class="stat-number gradient-text" data-count="1000">0+</h3>
+                        <p class="stat-label">Learning Hours</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic GitHub Contributions -->
+            <div class="row mt-5">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <div class="github-stats-card glass-card">
+                        <div class="stat-icon"><i class="fab fa-github"></i></div>
+                        <h3 class="stat-number gradient-text" id="github-contributions" data-count="0">0</h3>
+                        <p class="stat-label">GitHub Public Repos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ===== RESUME SECTION ===== -->
+    <!-- ============================= -->
+    <section id="resume" class="section-padding">
+        <div class="container">
+            <!-- Section Header -->
+            <h2 class="section-title"><span class="gradient-text">Resume</span></h2>
+            <p class="section-subtitle">Download or view my professional resume.</p>
+            <div class="section-divider"></div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="resume-preview glass-card text-center">
+                        <!-- Resume Icon -->
+                        <div class="resume-icon-wrapper">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3 class="resume-title">Shaik Sohel — Resume</h3>
+                        <p class="resume-description">
+                            My professional resume highlights my education, skills, projects, and experiences. 
+                            Available for download in PDF format.
+                        </p>
+
+                        <!-- Resume Buttons -->
+                        <div class="resume-buttons">
+                            <a href="resume/resume.pdf" download class="btn btn-primary-custom" id="resumeDownload">
+                                <i class="fas fa-download me-2"></i>Download Resume
+                            </a>
+                            <a href="resume/resume.pdf" target="_blank" class="btn btn-outline-custom" id="resumeView" rel="noopener">
+                                <i class="fas fa-eye me-2"></i>View Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ===== CONTACT SECTION ===== -->
+    <!-- ============================= -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <!-- Section Header -->
+            <h2 class="section-title"><span class="gradient-text">Contact Me</span></h2>
+            <p class="section-subtitle">Have a project in mind or just want to say hi? Let's connect!</p>
+            <div class="section-divider"></div>
+
+            <div class="row g-5">
+                <!-- Left — Contact Form -->
+                <div class="col-lg-7" data-aos="fade-right">
+                    <form class="contact-form glass-card" id="contact-form" novalidate>
+                        <div class="row g-3">
+                            <!-- Name -->
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="contactName" placeholder="Your Name" required>
+                                    <label for="contactName"><i class="fas fa-user me-2"></i>Your Name</label>
+                                </div>
+                            </div>
+                            <!-- Email -->
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="contactEmail" placeholder="Your Email" required>
+                                    <label for="contactEmail"><i class="fas fa-envelope me-2"></i>Your Email</label>
+                                </div>
+                            </div>
+                            <!-- Phone -->
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="contactPhone" placeholder="Your Phone">
+                                    <label for="contactPhone"><i class="fas fa-phone me-2"></i>Your Phone</label>
+                                </div>
+                            </div>
+                            <!-- Subject -->
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="contactSubject" placeholder="Subject" required>
+                                    <label for="contactSubject"><i class="fas fa-tag me-2"></i>Subject</label>
+                                </div>
+                            </div>
+                            <!-- Message -->
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="contactMessage" placeholder="Your Message" style="height: 150px" required></textarea>
+                                    <label for="contactMessage"><i class="fas fa-comment-dots me-2"></i>Your Message</label>
+                                </div>
+                            </div>
+                            <!-- Submit -->
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary-custom w-100" id="contactSubmit">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Right — Contact Info + Map -->
+                <div class="col-lg-5" data-aos="fade-left">
+                    <!-- Contact Info Cards -->
+                    <div class="contact-info-card glass-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <h5>Location</h5>
+                            <p>Khammam, Telangana, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card glass-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <h5>Email</h5>
+                            <p><a href="mailto:thisissohel07@gmail.com">thisissohel07@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card glass-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-text">
+                            <h5>Phone</h5>
+                            <p><a href="tel:+917981082694">+91 7981082694</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Quick Action Buttons -->
+                    <div class="contact-actions">
+                        <a href="https://wa.me/917981082694" target="_blank" class="whatsapp-btn" rel="noopener" id="whatsappBtn">
+                            <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                        </a>
+                        <a href="mailto:thisissohel07@gmail.com" class="email-btn" id="emailBtn">
+                            <i class="fas fa-envelope me-2"></i>Email
+                        </a>
+                        <a href="tel:+917981082694" class="call-btn" id="callBtn">
+                            <i class="fas fa-phone me-2"></i>Call
+                        </a>
+                    </div>
+
+                    <!-- Google Map -->
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121551.91093379677!2d79.46791254999999!3d17.247519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3449d5b7dc4231%3A0x55f8e8e5c4bde4e8!2sKhammam%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Location — Khammam, Telangana"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ===== FOOTER ===== -->
+    <!-- ============================= -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Brand & Description -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-brand"><span class="gradient-text">&lt;Sohel /&gt;</span></h3>
+                    <p class="footer-description">
+                        AI &amp; Machine Learning Student passionate about building intelligent solutions 
+                        and solving real-world problems through technology.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://github.com/thisissohel07" target="_blank" aria-label="GitHub" rel="noopener"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/shaik-sohel-07" target="_blank" aria-label="LinkedIn" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:thisissohel07@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+917981082694" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#hero"><i class="fas fa-chevron-right me-2"></i>Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right me-2"></i>About</a></li>
+                        <li><a href="#skills"><i class="fas fa-chevron-right me-2"></i>Skills</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right me-2"></i>Projects</a></li>
+                    </ul>
+                </div>
+
+                <!-- More Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Explore</h5>
+                    <ul class="footer-links">
+                        <li><a href="#education"><i class="fas fa-chevron-right me-2"></i>Education</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right me-2"></i>Services</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right me-2"></i>Contact</a></li>
+                        <li><a href="https://github.com/thisissohel07" target="_blank" rel="noopener"><i class="fas fa-chevron-right me-2"></i>GitHub</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Get In Touch</h5>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt me-2 gradient-text"></i>Khammam, Telangana, India</p>
+                        <p><i class="fas fa-envelope me-2 gradient-text"></i><a href="mailto:thisissohel07@gmail.com">thisissohel07@gmail.com</a></p>
+                        <p><i class="fas fa-phone me-2 gradient-text"></i><a href="tel:+917981082694">+91 7981082694</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2026</span> Shaik Sohel. All rights reserved. Crafted with <i class="fas fa-heart gradient-text"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop" aria-label="Scroll to top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ===== TOAST CONTAINER ===== -->
+    <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+    <!-- ============================== -->
+    <!-- ===== SCRIPTS ===== -->
+    <!-- ============================== -->
+
+    <!-- Bootstrap 5 Bundle (Popper included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Vanilla Tilt.js -->
+    <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

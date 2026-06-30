@@ -1,0 +1,689 @@
+/* ============================================
+   SHAIK SOHEL — Premium Portfolio
+   Animations Stylesheet (animations.css)
+   ============================================
+   Contains all keyframes, animation utilities,
+   hover effects, stagger delays, decorative
+   blobs, and transition classes.
+   ============================================ */
+
+/* ──────────────────────────────────────────────
+   KEYFRAME ANIMATIONS
+   ────────────────────────────────────────────── */
+
+/* Float — gentle vertical hover */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Pulse Glow — pulsating box-shadow */
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(108, 99, 255, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(108, 99, 255, 0.7);
+    }
+}
+
+/* Gradient Shift — animated gradient background */
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Spin — continuous 360° rotation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Fade In Up — slide up with fade */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Down — slide down with fade */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Left — slide from left with fade */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade In Right — slide from right with fade */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Scale In — zoom in with fade */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Slide In Up — slide from bottom (no fade) */
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Blob Morph — organic shape morphing */
+@keyframes blob-morph {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    25% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    50% {
+        border-radius: 50% 60% 30% 60% / 30% 50% 70% 50%;
+    }
+    75% {
+        border-radius: 40% 60% 50% 40% / 60% 40% 60% 40%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+/* Rotate Border — continuous border rotation (for profile ring) */
+@keyframes rotate-border {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Typing Cursor — blinking cursor effect */
+@keyframes typing-cursor {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--secondary);
+    }
+}
+
+/* Shimmer — loading/shimmer effect */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Bounce Subtle — gentle bounce */
+@keyframes bounce-subtle {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Ripple — expanding ring effect */
+@keyframes ripple {
+    0% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.4);
+        opacity: 0;
+    }
+}
+
+/* Swing — pendulum-like swing */
+@keyframes swing {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(3deg);
+    }
+    75% {
+        transform: rotate(-3deg);
+    }
+}
+
+/* Glow Pulse — soft glow pulsation */
+@keyframes glow-pulse {
+    0%, 100% {
+        filter: drop-shadow(0 0 3px rgba(108, 99, 255, 0.3));
+    }
+    50% {
+        filter: drop-shadow(0 0 12px rgba(108, 99, 255, 0.6));
+    }
+}
+
+
+/* ──────────────────────────────────────────────
+   ANIMATION UTILITY CLASSES
+   ────────────────────────────────────────────── */
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse {
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-gradient {
+    animation: gradient-shift 3s ease infinite;
+    background-size: 200% 200%;
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 0.6s ease forwards;
+}
+
+.animate-fade-in-left {
+    animation: fadeInLeft 0.6s ease forwards;
+}
+
+.animate-fade-in-right {
+    animation: fadeInRight 0.6s ease forwards;
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.5s ease forwards;
+}
+
+.animate-slide-in-up {
+    animation: slideInUp 0.5s ease forwards;
+}
+
+.animate-blob {
+    animation: blob-morph 8s ease-in-out infinite;
+}
+
+.animate-shimmer {
+    animation: shimmer 2s linear infinite;
+    background: linear-gradient(
+        90deg,
+        var(--bg-glass) 25%,
+        rgba(108, 99, 255, 0.1) 50%,
+        var(--bg-glass) 75%
+    );
+    background-size: 200% 100%;
+}
+
+.animate-bounce {
+    animation: bounce-subtle 2s ease-in-out infinite;
+}
+
+.animate-swing {
+    animation: swing 3s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+    animation: glow-pulse 2s ease-in-out infinite;
+}
+
+
+/* ──────────────────────────────────────────────
+   HOVER ANIMATION CLASSES
+   ────────────────────────────────────────────── */
+
+.hover-lift {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+.hover-glow {
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 30px rgba(108, 99, 255, 0.3);
+}
+
+.hover-scale {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.hover-rotate {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-rotate:hover {
+    transform: rotate(5deg);
+}
+
+/* Combined hover effects */
+.hover-lift-glow {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift-glow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(108, 99, 255, 0.3);
+}
+
+.hover-scale-glow {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-scale-glow:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(108, 99, 255, 0.3);
+}
+
+
+/* ──────────────────────────────────────────────
+   STAGGER ANIMATION DELAYS
+   (for grid items appearing sequentially)
+   ────────────────────────────────────────────── */
+
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.stagger-6 { animation-delay: 0.6s; }
+.stagger-7 { animation-delay: 0.7s; }
+.stagger-8 { animation-delay: 0.8s; }
+.stagger-9 { animation-delay: 0.9s; }
+.stagger-10 { animation-delay: 1.0s; }
+
+/* Elements with stagger should start hidden and animate in */
+[class*="stagger-"] {
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+
+/* ──────────────────────────────────────────────
+   DECORATIVE BLOB SHAPES
+   (background visual elements)
+   ────────────────────────────────────────────── */
+
+.blob {
+    position: absolute;
+    opacity: 0.08;
+    filter: blur(80px);
+    animation: blob-morph 12s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 0;
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+}
+
+.blob-1 {
+    width: 400px;
+    height: 400px;
+    background: var(--gradient-primary);
+    top: -200px;
+    left: -200px;
+    animation-delay: 0s;
+}
+
+.blob-2 {
+    width: 300px;
+    height: 300px;
+    background: var(--accent);
+    bottom: -150px;
+    right: -150px;
+    animation-delay: -2s;
+}
+
+.blob-3 {
+    width: 350px;
+    height: 350px;
+    background: var(--secondary);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-delay: -4s;
+}
+
+/* Additional decorative blobs */
+.blob-4 {
+    width: 250px;
+    height: 250px;
+    background: var(--gradient-accent);
+    top: 20%;
+    right: -100px;
+    animation-delay: -3s;
+}
+
+.blob-5 {
+    width: 200px;
+    height: 200px;
+    background: var(--primary-light);
+    bottom: 30%;
+    left: -80px;
+    animation-delay: -5s;
+}
+
+
+/* ──────────────────────────────────────────────
+   PRELOADER ANIMATIONS
+   ────────────────────────────────────────────── */
+
+/* Dual-ring loader */
+.loader-ring {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: relative;
+}
+
+.loader-ring::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border: 3px solid transparent;
+    border-top-color: var(--secondary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite reverse;
+}
+
+/* Triple-ring loader (extended) */
+.loader-ring::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid transparent;
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+/* Dot loader variant */
+.loader-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.loader-dots span {
+    width: 10px;
+    height: 10px;
+    background: var(--primary);
+    border-radius: 50%;
+    animation: bounce-subtle 1.4s ease-in-out infinite;
+}
+
+.loader-dots span:nth-child(2) {
+    animation-delay: 0.16s;
+    background: var(--secondary);
+}
+
+.loader-dots span:nth-child(3) {
+    animation-delay: 0.32s;
+    background: var(--accent);
+}
+
+
+/* ──────────────────────────────────────────────
+   MOUSE GLOW EFFECT
+   (follows cursor on desktop)
+   ────────────────────────────────────────────── */
+
+.mouse-glow {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(
+        circle,
+        rgba(108, 99, 255, 0.15) 0%,
+        rgba(108, 99, 255, 0.05) 40%,
+        transparent 70%
+    );
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    opacity: 0.15;
+    filter: blur(40px);
+    transition: opacity 0.3s ease;
+}
+
+
+/* ──────────────────────────────────────────────
+   PAGE TRANSITION
+   ────────────────────────────────────────────── */
+
+.page-transition {
+    animation: fadeInUp 0.5s ease;
+}
+
+
+/* ──────────────────────────────────────────────
+   SCROLL-TRIGGERED REVEAL
+   (used with JS IntersectionObserver or AOS)
+   ────────────────────────────────────────────── */
+
+/* Initial hidden state for elements that will be revealed on scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-scale.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* ──────────────────────────────────────────────
+   PARTICLE / SPARKLE EFFECTS
+   ────────────────────────────────────────────── */
+
+/* Sparkle effect for CTAs */
+.sparkle {
+    position: relative;
+    overflow: hidden;
+}
+
+.sparkle::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 40%,
+        rgba(255, 255, 255, 0.08) 45%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.08) 55%,
+        transparent 60%
+    );
+    animation: shimmer 3s linear infinite;
+    pointer-events: none;
+}
+
+
+/* ──────────────────────────────────────────────
+   GRADIENT BORDER ANIMATION
+   (for cards or sections that need animated borders)
+   ────────────────────────────────────────────── */
+
+.gradient-border {
+    position: relative;
+    background: var(--bg-card);
+    border-radius: var(--radius);
+}
+
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    background: var(--gradient-primary);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.gradient-border:hover::before {
+    opacity: 1;
+}
+
+
+/* ──────────────────────────────────────────────
+   TEXT ANIMATION EFFECTS
+   ────────────────────────────────────────────── */
+
+/* Gradient text animation */
+.text-animate-gradient {
+    background: linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary),
+        var(--accent),
+        var(--primary)
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 4s ease infinite;
+}
+
+/* Typewriter underscore blink */
+.blink {
+    animation: typing-cursor 0.8s ease-in-out infinite;
+}
+
+
+/* ──────────────────────────────────────────────
+   THEME TRANSITION
+   (smooth color transitions when toggling theme)
+   ────────────────────────────────────────────── */
+
+body.theme-transitioning,
+body.theme-transitioning *,
+body.theme-transitioning *::before,
+body.theme-transitioning *::after {
+    transition: background-color 0.4s ease,
+                color 0.4s ease,
+                border-color 0.4s ease,
+                box-shadow 0.4s ease !important;
+}
