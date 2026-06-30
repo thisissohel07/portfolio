@@ -1,6 +1,6 @@
 # 🚀 Shaik Sohel — Personal Portfolio
 
-[![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-blue?logo=github)](https://thisissohel07.github.io)
+[![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-blue?logo=github)](https://thisissohel07.github.io/portfolio/)
 [![Netlify](https://img.shields.io/badge/Deploy-Netlify-00C7B7?logo=netlify&logoColor=white)](https://netlify.com)
 [![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com)
 
@@ -156,7 +156,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 👤 Author
 
 **Shaik Sohel**
-- 🌐 Portfolio: [thisissohel07.github.io](https://thisissohel07.github.io)
+- 🌐 Portfolio: [thisissohel07.github.io/portfolio/](https://thisissohel07.github.io/portfolio/)
 - 💻 GitHub: [@thisissohel07](https://github.com/thisissohel07)
 - 🔗 LinkedIn: [shaik-sohel-07](https://linkedin.com/in/shaik-sohel-07)
 - 📧 Email: [thisissohel07@gmail.com](mailto:thisissohel07@gmail.com)
